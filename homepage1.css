@@ -1,0 +1,368 @@
+* {
+    margin:0px;
+    padding:0px;  
+  }
+  
+  body {
+      background-color: #e4e4e4;
+  }
+  .w {
+      width: 1200px;
+      margin: 30px auto;
+  }
+  
+  /* 清除浮动 */
+  .clearfix:before,.clearfix:after {
+      content:"";
+      display:table; 
+    }
+    .clearfix:after {
+      clear:both;
+    }
+    .clearfix {
+       zoom:1;
+    }   
+   
+  li{
+     list-style: none; 
+  }
+  a{
+      text-decoration: none;
+      color:rgb(0, 0, 0);
+  }
+  
+  /* 头部区域 */
+  .header {
+      height: 50px;
+  }
+  
+  /* logo部分 */
+  .logo img{
+      float: left;
+      width: 220px;
+      height:50px;
+   
+  }
+
+  .container{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+  
+  /* 导航栏部分 */
+  .nav ul {
+      float: left;
+     margin-left:100px;
+  }
+  
+   .nav li  {
+          display:inline-block;
+          height:42px;
+          padding:0 20px;
+          line-height: 42px;
+          color:#ffffff;
+           font-size: 18px;
+             
+   }
+
+  .bd {
+      padding:0 20px;
+  }
+  .course h3 {
+      height:48px;
+      line-height:48px;
+      font-weight:400px;
+      color:#fff;
+      text-align:center;
+      background-color: hsl(180, 2%, 71%), 100%, 85%;
+      
+  }
+  
+  .course ul li {
+      border-bottom: 1px solid #b4c098;
+      padding:14px 0;
+  }
+  
+  .course ul li h4 {
+      font-size:16px;
+      color: #4e4e4e;
+     
+  }
+  
+  .course ul li p {
+      font-size:12px;
+      color:#a5a5a5;
+  }
+  
+  .more {
+      display: block;
+      height:38px;
+      line-height: 38px;
+      text-align:center;
+      color:#42aaff;
+      font-size:16px;
+      font-weight: 700;
+      border: 1px solid #ffffff;
+      margin:5px;
+  }
+  
+  /* 精品推荐部分 */
+  .goods {
+      height:60px;
+      background-color: #b2adad;
+      box-shadow: 2px 3px 3px rgba(0,0,0,0.1);
+      margin-top:30px;
+  }
+  
+  /* 标题部分 */
+  .goods h3 {
+      display: block;
+      float:left;
+      line-height:60px;
+      font-size:16px;
+      color:#ffffff;
+       margin-left:30px; 
+  }
+  
+  /* 精品导航栏部分 */
+  .goods ul {
+       float: left; 
+      margin-left:30px;
+  }
+  
+  .goods ul li {
+      display: inline-block;
+      line-height: 60px;
+     
+  }
+  .goods ul li a {
+      padding:0 30px;
+      font-size: 16px;
+      color:#000000;
+      border-left: 1px solid #ffffff;
+  }
+   
+  
+  .mod {
+         float:right;
+         line-height: 60px;
+         font-size: 16px;
+         color:#ffffff;
+         padding-right:30px;
+  } 
+  
+  .box h3 {
+     float:left;
+     font-size: 20px;
+     color:#494949;
+  }
+  
+  .box a {
+      float:right;
+      font-size: 12px;
+      color:#000000;
+      margin:10px 30px 0 0;
+  }
+      .box-bd ul {
+          width:1225px ; 
+      }
+  
+      /* 产品介绍部分 */
+      #product1 {
+        text-align: center;
+    }
+    
+    #product1 .pro-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    
+    #product1 .pro {
+        width: 23%;
+        min-width: 250px;
+        padding: 10px 12px;
+        border: 1px solid #00000095;
+        border-radius: 25px;
+        transition: .2s;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+        margin: 15px 0;
+    }
+    
+    #product1 .pro:hover {
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    }
+    
+    #product1 .pro img {
+        width: 100%;
+        border-radius: 20px;
+    }
+    
+    #product1 .pro .des {
+        text-align: start;
+        padding: 10px 0;
+    }
+    
+    #product1 .pro .des span {
+        color: #606063;
+        font-size: 12px;
+    }
+    
+    #product1 .pro .des h5 {
+        padding-top: 7px;
+        color: #1a1a1a;
+        font-size: 14px;
+        transition: 0.2s;
+    }
+    
+    #product1 .pro:hover .des h5 {
+        color: #088178;
+    }
+    
+    #product1 .pro .des i {
+        color: rgb(240, 177, 18);
+        font-size: 12px;
+    }
+    
+    #product1 .pro .des h4 {
+        padding-top: 7px;
+        font-size: 15px;
+        font-weight: 700;
+        color: #088178;
+    }
+    
+    #product1 .pro .cart {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50px;
+        background-color: #ffffff;
+        font-weight: 500;
+        color: #088178;
+        border: 1px solid #cce7d0;
+        transition: 0.2s;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+    }
+    
+    #product1 .pro .cart:hover {
+        color: #fff;
+        background: #088178;
+        font-weight: 400;
+    }
+  
+  /* 底部模块 */
+  .copyright {
+      float: left;
+  }
+  .copyright p {
+     
+      font-size: 12px;
+      color:#ffffff;
+      margin:20px 0 15px 0;
+  
+  }
+  
+  .copyright a {
+      
+      display: block;
+      width: 118px;
+      height:33px;
+      border :1px solid #00a4ff;
+      text-align: center;
+      line-height: 33px;
+      font-size: 16px;
+      color:#00a4ff;
+  
+  }
+  .links {
+      float:right;
+      margin-top: 5px;
+  }
+  .links dl {
+      float: left;
+      display: block;
+      margin-left: 100px;
+  }
+  .linkd  dl dt {
+      font-size: 16px;
+      color:#333;
+  }
+  
+  .links dl dd a {
+      font-size: 12px;
+      color: #333;
+  }
+
+ 
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .logo {
+    margin-bottom: 30px;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow i {
+    color: #000000;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+footer .install .row img {
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+
+footer .install img {
+    margin: 10px 0 15px 0;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: #088178;
+}
+
+
+
