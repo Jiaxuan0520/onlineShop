@@ -1,0 +1,312 @@
+*{
+    margin:0px;
+    padding:0px;  
+  }
+  
+  body {
+      background-color: #e4e4e4;
+  }
+  .w {
+      width: 1200px;
+      margin: 30px auto;
+  }
+
+  /* 清除浮动 */
+  .clearfix:before,.clearfix:after {
+    content:"";
+    display:table; 
+  }
+  .clearfix:after {
+    clear:both;
+  }
+  .clearfix {
+     zoom:1;
+  }   
+ 
+li{
+   list-style: none; 
+}
+a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+
+/* 头部区域 */
+.header {
+    height: 50px;
+}
+
+/* 导航栏部分 */
+.nav ul {
+    float: left;
+   margin-left:100px;
+}
+
+ .nav li  {
+        display:inline-block;
+        height:42px;
+        padding:0 20px;
+        line-height: 42px;
+        color:#ffffff;
+         font-size: 18px;  
+ }
+ /* 伪类设置 */
+ .nav li a:hover {
+    color: #000000;
+    border-bottom: 2px solid #b28181;
+     
+ }
+
+ .nav li a#member{
+    color: #000000;
+    border-bottom: 2px solid #b57e7e;
+    font-size: 20px;
+    color:brown;
+ }
+
+ /* 搜索框 */
+ .search {
+    float: left; 
+    margin-left:70px;
+}
+/* 搜索框 */
+.search input {
+    float: left; 
+    width: 346px;
+    height:40px;
+    color:#000000;
+    padding-left:15px;
+    border-right: 0px;
+    border:1px solid #000000;
+
+   
+}
+
+.member{
+    font-size: 20px;
+    background-color: white;
+    border-radius: 20px;
+    border-width: 0;
+    border-color: rgb(255, 255, 255);
+    width: 150px;
+    height: 75px;
+    cursor: pointer;
+    margin: 1.5em;
+    font-size: 0.6em;
+}
+
+.member:after{
+    position: absolute;
+ top: 0;
+ left: 0;
+ display: block;
+ content: "";
+ width: 50%;
+ height: 50%;
+ opacity: 0;
+ mix-blend-mode: inherit;
+ border-radius: inherit;
+ transform-style: preserve-3d;
+ transform: translate3d(calc(var(--z) * 0px), calc(var(--z) * 0px), calc(var(--z) * 0px));
+}
+
+.member:before{
+    position: absolute;
+ top: 0;
+ left: 0;
+ display: block;
+ content: "";
+ width: 50%;
+ height: 50%;
+ opacity: 0;
+ mix-blend-mode: inherit;
+ border-radius: inherit;
+ transform-style: preserve-3d;
+ transform: translate3d(calc(var(--z) * 0px), calc(var(--z) * 0px), calc(var(--z) * 0px));
+}
+
+#learn:hover {
+    background-color: #299fbd;
+    transition: background 0.3s 0.1s;
+   }
+   
+   #learn:hover:before {
+    animation: translateWobble 2.2s ease forwards;
+   }
+   
+   #learn:hover:after {
+    animation: translateWobble 2.2s ease forwards;
+   }
+
+   #regis:hover {
+    background-color: #FFF65B;
+    transition: background 0.3s 0.1s;
+   }
+   
+   #regis:hover:before {
+    animation: translateWobble 2.2s ease forwards;
+   }
+   
+   #regis:hover:after {
+    animation: translateWobble 2.2s ease forwards;
+   }
+
+div#member{
+    float:left;
+    width:800px;
+}
+
+
+ img#promotion{
+    height:400px;
+    width:300px;
+    float:right;
+ }
+
+ /* 底部模块 */
+  
+ .footer {
+    height:415px;
+    background-color: #494949;
+}
+
+.container {
+    padding: 16px;
+  }
+
+  label {
+    display: inline-block;
+    width: 150px; 
+    text-align: left;
+    margin-right: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+input, textarea {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 15px;
+}
+
+
+input::placeholder, textarea::placeholder {
+    padding-left: 5px; 
+}
+  
+  input,textarea,  .registerbtn {
+    background-color: white;
+    border-radius: 10px;
+    border-width: 0;
+    border-color: rgb(9, 5, 5);
+    width: 500px;
+    height: 50px;
+    margin: 1.2em;
+    font-size: 1em;
+  }
+  .registerbtn{
+    width: 150px;
+  }
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  hr {
+    border: 1px solid #0c0b0b;
+    margin-bottom: 25px;
+  }
+  
+  
+  .registerbtn:hover {
+    background-color: rgb(221, 221, 221);
+    border-color: rgb(221, 221, 221);
+    cursor: pointer;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  footer .logo {
+    margin-bottom: 30px;
+  }
+  
+  footer .follow {
+    margin-top: 20px;
+  }
+  
+  footer .follow i {
+    color: #000000;
+    padding-right: 4px;
+    cursor: pointer;
+  }
+  
+  footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  
+  footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+  }
+  
+  footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  footer a {
+    font-size: 13px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  footer .install .row img {
+    border: 1px solid #088178;
+    border-radius: 6px;
+  }
+  
+  footer .install img {
+    margin: 10px 0 15px 0;
+  }
+  
+  footer .copyright {
+    width: 100%;
+    text-align: center;
+  }
+  
+  footer .follow i:hover,
+  footer a:hover {
+    color: #088178;
+  }
+
+  #mobile {
+    float: right; 
+    height: 50px; 
+    line-height: 50px; 
+}
+
+#mobile a {
+    color: #000; 
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 20px; 
+}
+
+#mobile i {
+    font-size: 24px; 
+    vertical-align: middle; 
+}
+
+
+
+
+
