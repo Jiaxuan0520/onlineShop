@@ -1,0 +1,187 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+
+body{
+    background-color:#e4e4e4;
+}
+
+.w {
+    width: 1200px;
+    margin: 30px auto;
+}
+
+/* 清除浮动 */
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table; 
+  }
+  .clearfix:after {
+    clear:both;
+  }
+  .clearfix {
+     zoom:1;
+  }   
+ 
+li{
+   list-style: none; 
+}
+a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+
+/* 头部区域 */
+.header {
+    height: 50px;
+}
+
+/* logo部分 */
+.logo img{
+    float: left;
+    width: 220px;
+    height:50px;
+ 
+}
+
+.container{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* 导航栏部分 */
+.nav ul {
+  float: left;
+  margin-left:100px;
+}
+
+ .nav li  {
+        display:inline-block;
+        height:42px;
+        padding:0 20px;
+        line-height: 42px;
+        color:#ffffff;
+         font-size: 18px;  
+ }
+ /* 伪类设置 */
+ .nav li a:hover {
+    color: #000000;
+    border-bottom: 1px solid #b28181;
+     
+ }
+
+.container{
+    width:100%;
+    height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+form{
+    border-radius: 5px;
+    background:linear-gradient(rgba(255, 226, 129, 0.8),rgba(255, 255, 255, 0.8));
+    display:flex;
+    flex-direction: column;
+    padding:5vw 4vw;
+    width:90%;
+    max-width:450px;
+    height:550px;
+}
+
+form h3{
+    color:rgb(0, 0, 0);
+    font-weight:800px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form input,form textarea{
+    border:0;
+    margin:10px;
+    padding:15px 18px;
+    outline:none;
+    background:#ffffff;
+    font-size:16px;
+}
+
+button{
+    padding:15px;
+    background:#3e8e41;
+    color:#ffffff;
+    font-size:15px;
+    border:0;
+    outline:0;
+    cursor:pointer;
+    width:150px;
+    margin:15px auto 0;
+    border-radius:20px;
+
+}
+  
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .logo {
+    margin-bottom: 30px;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow i {
+    color: #000000;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+footer .install .row img {
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+
+footer .install img {
+    margin: 10px 0 15px 0;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: #088178;
+}
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+    <title>Member</title>
+    <link rel="icon" type="image/jpg" sizes="32x32" href="image/Jlogo.jpg">
+    
+    <script language="JavaScript" type="text/javascript">
+        function checkform() {
+            var psw = document.getElementById("psw");
+            var psw1 = psw;
+            var pswrepeat = document.getElementById("psw-repeat");
+            var pswrepeat1 = pswrepeat;
+
+            if (document.form1.name1.value == "") {
+                alert("Please Enter Your Name!");
+                document.form1.name1.focus();
+                return false;
+            }else if (document.form1.email1.value == "") {
+                alert("Please Enter Your Email!");
+                document.form1.email1.focus();
+                return false;
+            }else if (trim(psw) == "") {
+                alert("Please Enter Your Password!");
+                document.form1.psw1.focus();
+                return false;
+            }else if (trim(psw1) == "") {
+                alert("Please Enter Your Confirm Password!");
+                document.form1.psw-repeat1.focus();
+                return false;
+            }else if (trim(psw1) != trim(psw)) {
+                alert("Password and Confirm Password must same!");
+                document.form1.psw.focus();
+                return false;
+            }
+            alert("Register Successful!!",window.location.href="reg_succ.html");
+            
+        }
+    </script>
+    <link rel="stylesheet" href="joinus.css">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="Jlogo.jpg">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+</head>
+<div class="header w">
+
+    <div class="logo">
+        <img src="image/logo.jpg" alt="">
+    </div>
+
+    <div class="nav w">
+        <ul class="homepage">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="membership.html" id="member">Member</a></li>
+            <li> <a href="aboutus.html">About Us</a></li>
+            <li> <a href="contactus.html">Contact Us</a></li>
+            <li> <a href="feedback.html">Feedback</a></li>
+        </ul>
+    </div>
+    <body>
+        <center>
+            <br><br><br>
+            <div>
+                <h1 style="font-size: 70px;">Join Our Memberships</h1>
+                <h1>Please Fill This Form To Be Our Member</h1>
+                <form name="form1">
+                    <div class="container">
+                        <h1>Register</h1>
+                        <br>
+                        <hr>
+                        <div>
+                            <label for="name"><b>Name</b></label>
+                            <input type="text" placeholder="Enter Name" name="name1" id="name">
+                        </div>
+                        <div>
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email1" id="email">
+                        </div>
+                        <div>
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw1" id="psw">
+                        </div>
+                        <div>
+                            <label for="psw-repeat"><b>Repeat Password</b></label>
+                            <input type="password" placeholder="Repeat Password" name="psw-repeat1" id="psw-repeat">
+                            
+                        </div>
+                        <button  class="registerbtn" onclick="checkform()">Register</button>
+                        <p>By creating an account you agree to our Terms & Privacy.</p>
+
+                    </div>
+                </form>
+            </div>
+        </center>
+    </body>
+    <hr>
+    <br>
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact Us</h4>
+            <p><strong>Address: </strong> Customer Care DepartmentLevel 6,Dayabumi Complex 50670 Kuala Lumpur</p>
+            <p><strong>Phone:</strong>0148693455</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col">
+            <h4>About</h4>
+            <a href="aboutus.html">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+    
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="login.html">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">Track My Order</a>
+            <a href="contactus.html">Help</a>
+        </div>
+    
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="image/play.jpg" alt="">
+                <img src="image/app.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways </p>
+            <img src="image/pay.png" alt="">
+        </div>
+        </div>
+       
+    
+
+
+</html>
